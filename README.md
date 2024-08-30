@@ -29,3 +29,26 @@ Optimization: 'optimize_supplier_selection() uses linear programming to minimize
 Report Generation: 'generate_report() creates a PDF report with vendor performance summary and the results of the supplier optimization.
 
 -----------------------------------------------------------------------------------------------------------------------------------
+
+Propulsion System Performance Monitoring.py = The goal of this project is to develop a Python script that monitors key performance indicators (KPIs) of a propulsion system, such as thrust, fuel consumption, temperature, and vibration levels, and generates alerts or reports when certain thresholds are exceeded.
+
+Data Ingestion: The script will simulate the ingestion of propulsion system data from various sensors.
+
+Data Processing: It will process the data to calculate performance metrics like efficiency and detect anomalies.
+
+Alerting: The script will generate alerts when performance metrics exceed predefined thresholds.
+
+Reporting: It will generate a summary report of the propulsion system's performance over a specific period.
+
+Simulate Propulsion Data: The simulate_propulsion_data function generates synthetic data for thrust, fuel consumption, temperature, and vibration levels over time.
+
+Analyze Performance: The analyze_performance function computes key performance metrics and detects anomalies using the Z-score method.
+
+Generate Alerts: If any anomalies are detected, an alert is printed to the console with details of the anomalies.
+
+Generate Report: The generate_report function writes a detailed performance report to a text file, including summaries and any detected anomalies.
+
+Visualization: The optional visualization step plots the time series data for better insight into the propulsion system's performance.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
