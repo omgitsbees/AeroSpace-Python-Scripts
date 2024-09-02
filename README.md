@@ -284,3 +284,79 @@ What the Application Does
         The application sends out alerts via email when significant risks are detected, ensuring that critical information reaches the relevant stakeholders promptly.
 
 -----------------------------------------------------------------------------------------------------------------------------------
+
+Environmental Impact Analysis
+Overview
+
+The Environmental Impact Analysis tool is designed to assess and analyze the environmental impact of aerospace missions, particularly focusing on CO2 emissions, noise pollution, and ecological footprint. This tool provides a comprehensive analysis by leveraging data processing, predictive modeling, and visualization techniques. It also features an easy-to-use graphical user interface (GUI) for interacting with the tool and generating reports.
+Features
+
+    Data Loading: Load environmental data from CSV or Excel files for analysis.
+    Data Preprocessing: Handle missing values and normalize the data to ensure accurate results.
+    CO2 Emissions Calculation: Estimate CO2 emissions based on fuel consumption data.
+    Noise Pollution Estimation: Calculate noise pollution levels and assess the impact radius.
+    Ecological Footprint Assessment: Analyze the impact on land use and biodiversity.
+    Predictive Modeling: Use linear regression to forecast future environmental impacts.
+    Data Visualization: Generate plots to visualize the data and the results of the analysis.
+    Interactive Maps: Visualize impact zones on maps using geographical data (requires geopandas).
+    PDF Report Generation: Automatically generate a detailed PDF report of the analysis.
+    Graphical User Interface (GUI): A simple and intuitive interface for users to interact with the tool.
+
+Installation
+Prerequisites
+
+    Python 3.6 or higher
+    Required Python packages: pandas, numpy, matplotlib, seaborn, scikit-learn, fpdf, tkinter
+    Optional for map visualization: geopandas, shapely, fiona, pyproj, rtree
+
+Install Required Packages
+
+You can install the required packages using pip:
+
+bash
+
+pip install pandas numpy matplotlib seaborn scikit-learn fpdf geopandas shapely fiona pyproj rtree
+
+Running the Application
+
+    Clone the repository:
+
+    bash
+
+git clone https://github.com/yourusername/environmental-impact-analysis.git
+
+Navigate to the project directory:
+
+bash
+
+cd environmental-impact-analysis
+
+Run the script:
+
+bash
+
+    python environmental_impact_analysis.py
+
+    Use the GUI:
+        A window will pop up allowing you to load data, run the analysis, and generate reports with a few clicks.
+
+Usage
+Loading Data
+
+    Use the "Load Data" button to import your environmental data file (CSV or Excel).
+    The data should contain columns such as Fuel_Consumed, Distance, Area_Used, Longitude, and Latitude.
+
+Running the Analysis
+
+    Click on the "Run Analysis" button to preprocess the data, calculate emissions, noise, and ecological footprint, and generate a predictive model.
+    The analysis results will be displayed, and a PDF report will be automatically generated.
+
+Generating Reports
+
+    The tool automatically generates a PDF report summarizing the analysis, including CO2 emissions, noise pollution, ecological footprint, and predictive model performance.
+
+Project Structure
+
+    environmental_impact_analysis.py: Main script containing the code for the analysis.
+    data/: Folder for storing input data files (if applicable).
+    reports/: Folder for storing generated PDF reports (if applicable).
