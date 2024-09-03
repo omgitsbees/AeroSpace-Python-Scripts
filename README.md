@@ -1,54 +1,188 @@
-NASA Dataset.py = This grabs data from a publcily available .csv file from NASA's datasets, titled Outgassing_Db_20240828.csv
+✈️ Flight Data Analysis and Reporting
+Overview
+
+This project simulates the collection of flight data, performs comprehensive analysis, and generates a detailed report with visualizations. The report is automatically created as a PDF, providing insights into key flight parameters such as altitude, velocity, and temperature over time.
+Table of Contents
+
+    Features
+    Installation
+    Usage
+    Data
+    Analysis
+    Visualization and Reporting
+    Future Enhancements
+    Contributing
+    License
+
+Features
+
+    Simulated Flight Data: Generate synthetic flight data including time, altitude, velocity, and temperature.
+    Data Analysis: Compute key statistics such as mean, max, and min values for altitude, velocity, and temperature.
+    Visualizations: Create line plots for altitude, velocity, and temperature over time.
+    PDF Report Generation: Compile the analysis results and visualizations into a professional PDF report.
+
+Installation
+Prerequisites
+
+Ensure you have Python 3.6+ installed along with the following packages:
+
+    pandas
+    numpy
+    matplotlib
+    seaborn
+    fpdf
+
+Usage
+
+    Run the script:
+
+    bash
+
+    python flight_data_analysis_and_reporting.py
+
+    The script will generate simulated flight data, analyze it, create visualizations, and compile a PDF report.
+
+    The output report is saved as flight_data_analysis_report.pdf.
+
+Data
+
+The simulated flight data includes the following features:
+
+    Time (s): The time in seconds.
+    Altitude (ft): The altitude in feet.
+    Velocity (mph): The velocity in miles per hour.
+    Temperature (C): The temperature in Celsius.
+
+Analysis
+
+The analysis computes key statistics for each of the flight parameters:
+
+    Mean Altitude (ft)
+    Max Altitude (ft)
+    Min Altitude (ft)
+    Mean Velocity (mph)
+    Max Velocity (mph)
+    Min Velocity (mph)
+    Mean Temperature (C)
+    Max Temperature (C)
+    Min Temperature (C)
+
+Visualization and Reporting
+
+The script generates the following visualizations:
+
+    Altitude Over Time
+    Velocity Over Time
+    Temperature Over Time
+
+These visualizations are embedded in the automatically generated PDF report, which also includes the computed statistics.
+Future Enhancements
+
+    Real Flight Data Integration: Integrate with real-world flight data for analysis.
+    Interactive Visualizations: Add interactive elements to the visualizations for better data exploration.
+    Extended Data Analysis: Include additional parameters like pressure, wind speed, and fuel consumption.    
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
-best_prices_new_glenn.py = this simulates parts, and prices as if they are on the Blue Origin New Glenn rocket, grabbing prices from multiple vendors in order to compare 
+🚀 Propulsion System Performance Monitoring
+Overview
 
------------------------------------------------------------------------------------------------------------------------------------
+This project involves simulating, analyzing, and monitoring the performance of a propulsion system. The system's key parameters such as thrust, fuel consumption, temperature, and vibration are tracked over time. The project includes functionality for detecting anomalies, generating alerts, and producing a detailed performance report.
+Table of Contents
 
-cad_parts_list.py = this automation script takes the parts list from a CAD file and creates a csv with the weight, and size dimensions of each part 
+    Features
+    Installation
+    Usage
+    Data Simulation
+    Performance Analysis
+    Anomaly Detection and Alerts
+    Reporting
+    Visualization
+    Future Enhancements
+    Contributing
+    License
 
------------------------------------------------------------------------------------------------------------------------------------
+Features
 
-Flight Data Analysis and Reporting = This script will simulate the collection of flight data, perform statistical analysis, and generate a report with visualizations.
+    Data Simulation: Generate synthetic data for propulsion system parameters including thrust, fuel consumption, temperature, and vibration.
+    Performance Analysis: Compute key statistics like average thrust, total fuel consumption, maximum temperature, and maximum vibration.
+    Anomaly Detection: Identify anomalies in the system's performance using Z-scores.
+    Alerts: Generate alerts if anomalies are detected.
+    Reporting: Generate a comprehensive text report summarizing the system's performance and any detected anomalies.
+    Visualization: Optionally visualize the propulsion system data over time.
 
------------------------------------------------------------------------------------------------------------------------------------
+Installation
+Prerequisites
 
-The simulate_flight_data() function generates random data for altitude, velocity, and temperature. This mimics real flight data collection. The analyze_flight_data() function calculates basic statistics such as mean, max, and min values for each metric. The generate_report() function creates a PDF report. It includes a summary of the analysis and visualizes the data over time.
+Ensure you have Python 3.6+ installed along with the following packages:
 
------------------------------------------------------------------------------------------------------------------------------------
+    numpy
+    pandas
+    matplotlib
+    seaborn
+    scipy
 
-Supply Chain Optimization = automate the analysis and reporting of vendor performance, parts availability, and cost-effectiveness.
+Usage
 
-Simulate Data Collection: 'simulate_supply_chain_data() generates random data for vendors, parts, costs, lead times, and quality scores.
+    Run the script:
 
-Data Analysis: 'analyze_supply_chain_data() calculates mean cost, lead time, and quality score for each vendor.
+    bash
 
-Optimization: 'optimize_supplier_selection() uses linear programming to minimize the total cost while ensuring each part is supplied and no vendor is overused.
+    python propulsion_system_monitoring.py
 
-Report Generation: 'generate_report() creates a PDF report with vendor performance summary and the results of the supplier optimization.
+    View the report:
 
------------------------------------------------------------------------------------------------------------------------------------
+    The script generates a performance report saved as propulsion_system_report.txt. The report includes a summary of the system's performance and details of any anomalies detected.
 
-Propulsion System Performance Monitoring.py = The goal of this project is to develop a Python script that monitors key performance indicators (KPIs) of a propulsion system, such as thrust, fuel consumption, temperature, and vibration levels, and generates alerts or reports when certain thresholds are exceeded.
+    Visualize the data (optional):
 
-Data Ingestion: The script will simulate the ingestion of propulsion system data from various sensors.
+    The script also offers an optional visualization of the propulsion system data over time.
 
-Data Processing: It will process the data to calculate performance metrics like efficiency and detect anomalies.
+Data Simulation
 
-Alerting: The script will generate alerts when performance metrics exceed predefined thresholds.
+The data simulation step generates synthetic time-series data for the following propulsion system parameters:
 
-Reporting: It will generate a summary report of the propulsion system's performance over a specific period.
+    Time: Time steps (in seconds).
+    Thrust (N): Thrust generated by the system (in Newtons).
+    Fuel Consumption (kg): Fuel consumption rate (in kilograms).
+    Temperature (°C): System temperature (in degrees Celsius).
+    Vibration (g): Vibration level (in gravitational units).
 
-Simulate Propulsion Data: The simulate_propulsion_data function generates synthetic data for thrust, fuel consumption, temperature, and vibration levels over time.
+Performance Analysis
 
-Analyze Performance: The analyze_performance function computes key performance metrics and detects anomalies using the Z-score method.
+The performance analysis computes key metrics:
 
-Generate Alerts: If any anomalies are detected, an alert is printed to the console with details of the anomalies.
+    Average Thrust (N)
+    Total Fuel Consumption (kg)
+    Max Temperature (°C)
+    Max Vibration (g)
 
-Generate Report: The generate_report function writes a detailed performance report to a text file, including summaries and any detected anomalies.
+Anomalies are detected using Z-scores, and any data points that deviate significantly from the norm are flagged.
+Anomaly Detection and Alerts
 
-Visualization: The optional visualization step plots the time series data for better insight into the propulsion system's performance.
+If anomalies are detected in the system's performance, an alert is generated, and the details of the anomalies are included in the performance report.
+Reporting
+
+The generated performance report, propulsion_system_report.txt, contains:
+
+    A summary of key performance metrics.
+    Details of any anomalies detected during the analysis.
+    Conclusions based on the analysis.
+
+Visualization
+
+The script includes an optional step to visualize the propulsion system data over time, displaying line plots for:
+
+    Thrust
+    Fuel Consumption
+    Temperature
+    Vibration
+
+Future Enhancements
+
+    Real-time Monitoring: Implement real-time data monitoring and anomaly detection.
+    Extended Parameters: Incorporate additional parameters such as pressure and speed.
+    Interactive Visualizations: Add interactive dashboards for deeper data exploration.
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
@@ -447,3 +581,105 @@ Project Structure
     environmental_impact_analysis.py: Main script containing the code for the analysis.
     data/: Folder for storing input data files (if applicable).
     reports/: Folder for storing generated PDF reports (if applicable).
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+🚀 Historical Launch Data Analysis
+Overview
+
+This project performs a comprehensive analysis of historical aerospace launch data, leveraging various data science techniques to gain insights, predict outcomes, and identify trends. The analysis includes exploratory data analysis, machine learning classification, clustering, and time series analysis.
+Table of Contents
+
+    Features
+    Installation
+    Usage
+    Data
+    Analysis
+    Visualization
+    Future Enhancements
+    Contributing
+    License
+
+Features
+
+    Synthetic Dataset Generation: Create a simulated dataset for historical launch data.
+    Exploratory Data Analysis (EDA): Visualize trends, correlations, and distributions in the dataset.
+    Machine Learning:
+        Random Forest Classification: Predict the success of future launches based on historical data.
+        Principal Component Analysis (PCA): Dimensionality reduction for better model performance.
+        K-Means Clustering: Identify patterns in launch data.
+    Time Series Analysis:
+        Trend Analysis: Analyze and visualize trends over time.
+        Anomaly Detection: Identify anomalies in launch success rates.
+    Data Visualization: Comprehensive visualizations for better insights.
+
+Installation
+Prerequisites
+
+Ensure you have Python 3.6+ installed along with the following packages:
+
+    pandas
+    numpy
+    matplotlib
+    seaborn
+    scikit-learn
+
+    Usage
+
+    Run the script:
+
+    bash
+
+    python historical_launch_data_analysis.py
+
+    The script will generate a synthetic dataset and perform various analyses including data visualization, machine learning, and time series analysis.
+
+    The output includes visualizations, classification reports, and predictions based on the provided features.
+
+Data
+
+The script generates a synthetic dataset simulating historical launch data with the following features:
+
+    Launch_Date: Date of the launch.
+    Launch_Mass: Mass of the launch vehicle.
+    Payload_Mass: Mass of the payload.
+    Launch_Success: Binary outcome indicating the success (1) or failure (0) of the launch.
+    Year, Month, Day: Extracted from Launch_Date.
+    Payload_to_LaunchMass_Ratio: Ratio of payload mass to launch mass.
+
+Analysis
+Exploratory Data Analysis (EDA)
+
+The script provides visualizations for:
+
+    Yearly launch successes and failures.
+    Correlations between launch features.
+    Payload to launch mass ratio vs. launch success.
+
+Machine Learning
+
+    Random Forest Classifier: A model to predict launch success.
+    PCA: Dimensionality reduction to improve model performance.
+    K-Means Clustering: Clustering of launch data for pattern recognition.
+
+Time Series Analysis
+
+    Monthly Launch Success Rate: Analysis and visualization of the monthly success rate.
+    Rolling Average: Visualization of rolling averages to identify trends.
+    Anomaly Detection: Identification and visualization of anomalies in launch data.
+
+Visualization
+
+The script generates various plots:
+
+    Yearly launch success vs. failure.
+    Box plots for payload ratios.
+    Correlation matrix heatmap.
+    Scatter plot for K-Means clustering.
+    Time series plots for launch success rates and anomalies.
+
+Future Enhancements
+
+    Integration with Real Data: Replace the synthetic dataset with real-world historical launch data.
+    Enhanced Predictive Models: Implement additional machine learning algorithms for better predictions.
+    Interactive Visualizations: Use tools like Plotly or Dash for interactive data exploration.
