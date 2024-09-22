@@ -1,3 +1,103 @@
+Resource Allocation and Utilization Tracking System
+
+This Python project is a Resource Allocation and Utilization Tracking tool, designed for use in industries such as aerospace to track the assignment of resources, forecast their utilization, and simulate resource consumption over time. The tool features an interactive UI and includes functionalities for AI-based optimization, forecasting, simulation, and Jira integration.
+
+This project is built to showcase complex problem-solving skills and can be used as a portfolio piece for job applications, such as for companies like Blue Origin.
+Features
+🛠️ AI-Based Resource Allocation
+
+    Uses Linear Programming via PuLP to optimize the allocation of resources to projects.
+
+📈 Forecasting Resource Utilization
+
+    Forecasts future resource utilization based on historical data using SARIMA models from statsmodels.
+
+⏳ Simulation Mode
+
+    Simulates resource usage over time, with background processes managed by schedule.
+
+🔐 User Authentication
+
+    Password hashing and authentication using bcrypt to ensure secure access to the application.
+
+🛠️ Jira Integration
+
+    Connects to Jira's API to fetch and display issues, which helps in tracking tasks and managing resource allocation accordingly.
+
+📊 Tkinter GUI
+
+    A user-friendly graphical interface that enables interaction with all functionalities, including login, resource allocation, simulation, Jira integration, and forecasting.
+
+Tech Stack
+
+    Frontend/UI: Tkinter for the graphical interface.
+    Optimization: PuLP for Linear Programming.
+    Simulation: schedule for background simulation tasks.
+    Authentication: bcrypt for hashing and validating passwords.
+    Data Processing: pandas for handling utilization data.
+    Forecasting: statsmodels for time-series forecasting (SARIMA model).
+    Jira Integration: JIRA API for fetching tasks and managing them within the application.
+
+Setup Instructions
+1. Clone the Repository
+
+bash
+
+git clone https://github.com/your-username/resource-allocation-utilization-tracking.git
+cd resource-allocation-utilization-tracking
+
+2. Install Dependencies
+
+Install the required Python packages:
+
+bash
+
+pip install pulp schedule bcrypt pandas statsmodels jira
+
+3. Run the Application
+
+Execute the Python script to launch the Tkinter GUI:
+
+bash
+
+python resource_allocation.py
+
+4. Jira Integration
+
+For Jira integration, you'll need:
+
+    A Jira account
+    Your Jira domain and an API token from Jira
+
+Update the fetch_jira_issues() function in the script with your Jira credentials:
+
+python
+
+jira_options = {'server': 'https://your-jira-domain.atlassian.net'}
+jira = JIRA(options=jira_options, basic_auth=('email@example.com', 'api_token'))
+
+How to Use
+
+    Login: Start by entering your username and password in the UI. For demo purposes, the password is password123.
+
+    Optimize Resource Allocation: Click the "Optimize Allocation" button to view the best allocation of available resources to projects based on AI optimization.
+
+    Start Simulation: Run the resource utilization simulation in the background by clicking the "Start Simulation" button. This simulates resource consumption over time.
+
+    Forecast Utilization: Click the "Forecast Utilization" button to view predicted utilization rates for the next 12 time steps, based on historical data.
+
+    Fetch Jira Issues: To view current tasks from your Jira project, click the "Fetch Jira Issues" button. Ensure you have updated the script with your Jira credentials.
+
+Sample Screenshots
+
+Fig 1: AI-based optimized resource allocation interface
+
+Fig 2: Forecasted utilization data output
+
+![Screenshot 2024-09-22 100208](https://github.com/user-attachments/assets/4cc3bef1-edfb-4728-a3c5-7b3327742fbd)
+
+------------------------------------------------------------------------------------------------------------------
+
 ✈️ Flight Data Analysis and Reporting
 Overview
 
